@@ -45,6 +45,7 @@ app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
 app.use(csurf());
+
 //Nossos próprios middlewares
 app.use(middlewareGlobal);
 app.use(checkCsurfError);
